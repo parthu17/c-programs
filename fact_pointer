@@ -1,0 +1,18 @@
+# include <stdio.h>
+int fact(int*);
+int main(){
+ int n,*p;
+ p=&n;
+ printf("enter the number");
+ scanf("%d",&n);
+ printf("the facotrial of the number %d is %d",*p,fact(p));
+ return 0;
+ }
+int fact(int *p){
+ if(*p==1){
+  return 1;
+  }
+else{
+return *p * fact(*p-1);
+}
+}
