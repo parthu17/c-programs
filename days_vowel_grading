@@ -1,1 +1,44 @@
+#include <stdio.h>
+#include<stdlib.h>
+enum day {monday,tuesday,wednesday,thursday,friday,saturday};
+int main(){
+char ch;
+int mark;
+enum day d=monday;
+printf("enter character")'
+scanf("%c",&ch);
+switch(ch){
+case'a': 
+case'e':
+case'i': 
+case'o': 
+case'u': printf("vowel");
+break;
+default:
+printf("not vowel");
+}
+printf("enter marks")'
+scanf("%d",&marks);
+switch(marks>=90){
+case 1: printf("A");
+break;
+case 0:
+if(marks>=80){
+printf("B");
+}
+else if(marks>=70){
+printf("C");
+}
+else if(marks>=60){
+printf("D");
+}
+else{
+printf("Fail");
+}
+}
+printf("%d",d+1);
+return 0;
+}
+
+
 
