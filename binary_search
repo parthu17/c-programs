@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+int binary(int*,int,int);
+int main(){
+ int n,*p,i,key;
+ printf("enter the number of elements");
+ scanf("%d",&n);
+ p=(int*)malloc(n*sizeof(int));
+ printf("enter the sorted array elements");
+ for(i=0;i<n;i++){
+  printf("enter the %d element",i+1);
+  scanf("%d",p+i);
+  }
+  printf("enter the element to be found");
+  scanf("%d",&key);
+  printf("the element %d is in %d index",key,binary(p,n,key));
+  return 0;
+}
+int binary(int*p,int n,int key){
+ int l,h,mid;
+ l=0;
+ h=n-1;
+ whiile(l<=h){
+  mid =(l+h)/2;
+  if(*(p+mid) == key){
+   return i;
+   }
+   else if(*(p+mid)<key){
+    l=mid+1;
+    }
+    else{
+    h=mid-1;
+    }
+    }
+    if(l>h){
+    return -1;
+    }
+    }
