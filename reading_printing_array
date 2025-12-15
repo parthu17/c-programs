@@ -1,0 +1,27 @@
+# include <stdio.h>
+# include <stdlib.h>
+void read(int*,int);
+void print(int*,int);
+int main(){
+ int n,*p;
+ printf("enter number of elemens");
+ scanf("%d",&n);
+ p= int* calloc(n,sizeof(int));
+ printf("enter the elements");
+ read(p,n);
+ printf("the array elements are");
+ print(p,n);
+ return 0;
+ }
+void read(int *p,int n){
+ int i;
+ for(i=0;i<n;i++){
+   scanf("%d",p+i);
+ }
+  }
+void print(int *p,int n){
+  int i;
+  for(i=0;i<n;i++){
+    printf("%d",*(p+i));
+    }
+  }
