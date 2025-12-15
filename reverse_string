@@ -1,0 +1,23 @@
+# include <stdio.h>
+# include <stdlib.h>
+# include <string.h>
+void strev(char *, int );
+int main(){
+ char st[300],*ch;
+ int i,len=0;
+ ch=st;
+ printf("enter the string");
+ gets(st);
+ for(i=0;st[i]!='\0';i++){
+  len++;
+}
+ch= char* malloc(len * sizeof(char));
+strev(ch,len);
+return 0;
+  }
+void strev(char *ch,int len){
+  int i;
+  for(i=len-1;i>=0;i++){
+    printf("%c",*(ch+i));
+    }
+  }
