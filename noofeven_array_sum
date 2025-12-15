@@ -7,6 +7,9 @@ int n,i,*p,even=0,odd=0;
 printf("enter length of array");
 scanf("%d",&n);
 p= int* calloc(n,sizeof(int));
+for(i=0;i<n;i++){
+scanf("%d",p+i);
+}
 printf("length of array %d",length(p,n));
 printf("sum of array is %d",sum(p,n));
 for(i=0;i<n;i++){
