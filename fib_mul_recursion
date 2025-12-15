@@ -1,0 +1,38 @@
+# include <stdio.h>
+int multi(int ,int);
+void fib(int );
+int main(){
+int n,a,b;
+printf("enter the number of digit of fibonacci you want");
+scanf("%d",&n);
+printf("enter the digits to be multiplied");
+scanf("%d%d",&a,&b);
+printf("the multiplication of the two number is %d",multi(a,b));
+printf("fibonacci is:");
+fib(n);
+return 0;
+}
+int multi(int a,int b){
+if(b>=0){
+ if(b==0){
+ return 0;
+ }
+ else{
+ return a + multi(a,b-1);
+ }}
+ else{
+ printf("enter only +ve");
+ }
+ }
+ void fib(int n){
+ if(n==1){
+ return 0;
+ }
+ else if(n==2){
+ return 1;
+ }
+ else{
+ return fib(n-1)+fib(n-2);
+ }
+ }
+ 
