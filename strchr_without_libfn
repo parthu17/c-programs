@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+int stringchr (char*,int,char);
+int main(){
+ int n,i;
+ char key,*p;
+ printf("enter the number of characters");
+ scanf("%d",&n);
+ p=(char*)malloc(n*sizeof(char));
+ printf("enter the string");
+ for(i=0;i<n-1;i++){
+  scanf("%c",p+i);
+  }
+  printf("enter the character to be found");
+  scanf("%c",&key);
+  printf("the character %c is in %d index",key,stringchr(p,n,key));
+  return 0;
+}
+int stringchr(char*p,int n,char key){
+ int i;
+ for(i=0;*(p+i)!='\0';i++){
+  if(*(p+i) == key){
+     return i;
+}
+}
+if(i=n){
+ return -1;
+}
+}
