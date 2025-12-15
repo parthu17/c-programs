@@ -1,1 +1,24 @@
+#include <stdio.h>
+# define pi 3.14
+int main(){
+int b,h;
+printf("enter base and height for triangle");
+scanf("%d%d",&b,&h);
+printf("area=%d",0.5*b*h);
+printf("enter base and height for parallelo");
+scanf("%d%d",&b,&h);
+printf("area=%d",b*h);
+printf("enter sides for rectangle);
+scanf("%d%d",&b,&h);
+printf("area=%d",b*h);
+printf("enter side for square");
+scanf("%d",&b);
+printf("area=%d",b*b);
+printf("enter radius for circle");
+scanf("%d",&b);
+printf("area=%d",pi*b*b);
+return 0;
+}
+
+
 
