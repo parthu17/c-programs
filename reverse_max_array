@@ -1,10 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
-int reverse(int*,int);
+void reverse(int*,int);
 int max(int*,int);
-itn main(){
+int main(){
 int n,i,*p,even=0,odd=0;
 printf("enter length of array");
 scanf("%d",&n);
 p= int* calloc(n,sizeof(int));
-pri
+for(i=0;i<n;i++){
+scanf("%d",p+i);
+}
+printf("max is %d",max(p,n));
+reverse(p,n);
+return 0;
+}
+void reverse(int *p,int n){
+int i;
+for(i=n-1;i>=0;i++){
+printf("%d",*(p+i));
+}
+}
+int max(int *p,int n){
+int i,max=*(p);
+for(i=0;i<n;i++){
+if(*(p+i)>=max){
+max= *(p+i);
+}
+}
+return max;
+}
