@@ -1,0 +1,33 @@
+#include <stdio.h>
+void armstrong(int*);
+int fact(int);
+int main(){
+int n,*p;
+printf("enter the number");
+scanf("%d",&n);
+p=&n;
+armstrong(p);
+return 0;
+}
+int fact(int m){
+if(m==1){
+return 1;
+}
+else{
+return m* fact(m-1);
+}
+}
+void armstrong(int *p){
+int n=*p,rem,sum=0;
+while(n!=0){
+rem=n%10;
+sum=sum+fact(rem);
+n=n/10;
+}
+if (sum==*p){
+printf("armstrong");
+}
+else{
+printf("not armstrong");
+}
+}
