@@ -1,0 +1,24 @@
+# include <stdio.h>
+int main(){
+int n,i,bp,gs,p,t,r,I;
+printf("the number till even ");
+scanf("%d",&n);
+for(i=1;i<=n;i++){
+if(i%2==0){
+printf("%d",i);
+}
+printf("enter basic pay");
+scanf("%d",&bp);
+gs=(0.1 * bp) + bp+ (0.15 * bp);
+printf("gross %d",gs);
+printf("enter principle amt,time, rate of interest")
+scanf("%d%d%d",&p,%t,&r);
+I=p;
+printf("simple int is %d",(p*t*(r/100));
+for(i=1,i<=t;i++){
+I*=(1+(r/100));
+}
+printf("compound interest %d",I);
+return 0;
+}
+
